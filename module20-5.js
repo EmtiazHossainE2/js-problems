@@ -90,6 +90,7 @@ console.log(yourGrade);
 
 function simpleInterest (principle,interest,time){
     let myInterest = (principle * interest * time) / 100 ;  
+    // let myInterest = (principle  + principle * interest*time) / 100  ; total
     return myInterest ;
 }
 let principle = 500 ;
