@@ -4,11 +4,23 @@
 
 //১. সিম্পল একটা ফাংশন লিখতে হবে। যেটার নাম হবে feetToInch এবং এই ফাংশন ইনপুট হিসেবে নিবে feet আর রিটার্ন করবে inch । অর্থাৎ এই ফাংশনকে কোন একটা ফিট বলে দিলে সে রিটার্ন হিসেবে বলে দিবে কত ইঞ্চি হয়। 
 
-
+function feetToInch (feet){
+    let inch = feet * 12 ;
+    return inch
+} 
+let feet = 3 ;
+let inch = feetToInch(feet) ;
+console.log(inch);
 
 //২. একদম ফাংশন এর নাম হুবহু centimeterToMeter নাম দিয়ে একটা ফাংশন লিখবে। এই ফাংশনে ইনপুট হিসাবে কেউ সেন্টিমিটার দিবে আর সেই সেন্টিমিটার কে মিটার এ কনভার্ট করে রেজাল্ট রিটার্ন করবে। 
 
-
+function centimeterToMeter (centimeter){
+    let meter = centimeter / 100 ;
+    return meter ;
+}
+let centimeter = 1000 ; 
+let meter = centimeterToMeter(centimeter)
+console.log(meter);
 
 /* ৩. আরেকটা ফাংশন লিখবে যেটার নাম লিখবে। যেই ফাংশনের নাম হবে paperRequirements এই ফাংশনের প্যারামিটার হিসেবে তিনটা প্যারামিটার হবে। প্রথম প্যারামিটার হবে তুমি প্রথম বই কত কপি ছাপাতে চাও। সেকেন্ড প্যারামিটার হবে তুমি সেকেন্ড বই কত কপি ছাপাতে চাও। আর থার্ড প্যারামিটার হবে তুমি থার্ড বই কত কপি ছাপাতে চাও। অর্থাৎ কোন বই এর কত কপি ছাপানো হবে সেটাই প্যারামিটার হিসেবে নিবে। 
 
@@ -24,7 +36,20 @@
 এখন তোমার কাজ হচ্ছে paperRequirements নামক ফাংশন লিখে ফেলা যাতে। সেই ফাংশনকে কল করে কোন বই এর কত কপি লাগবে বলে দিবে প্যারামিটার হিসেবে। আর ফাংশন হিসাব করে বলে দিবে তোমার সর্বমোট কতপৃষ্ঠা কাগজ লাগবে। 
 
 উত্তর হিসেবে সংখ্যা রিটার্ন করবে।  */
-
+const book1Page = 100 ; 
+const book2Page = 200 ; 
+const book3Page = 300 ; 
+function paperRequirements (book1, book2, book3){
+    let totalBook1 = book1Page * book1 
+    let totalBook2 = book2Page * book2
+    let totalBook3 = book3Page * book3 
+    let totalBookPage = totalBook1 + totalBook2 + totalBook3 
+    return totalBookPage ; 
+}
+let book1 = 3 
+let book2 =  5
+let book3 = 9
+console.log(paperRequirements(book1, book2, book3)) ;
 
 
 
