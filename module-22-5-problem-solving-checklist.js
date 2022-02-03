@@ -56,19 +56,20 @@ console.log(paperRequirements(book1, book2, book3)) ;
 //৪. একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে। 
 
 function myFriends (friends){
-    let largeName = friendsName[0] ;
-    for(let friend of friends){
+    let largeName = friends[0] ;
+    /* for(let friend of friends){
         if(friend.length > largeName.length ){
             largeName = friend ;
         }
-    } 
-    /* 
-    for(let i = 0 ; i <= friends.length ; i++){
+    }  */
+    // console.log(friends)
+    for(let i = 0 ; i < friends.length ; i++){
         const friend = friends[i]
+        
         if(friend.length > largeName.length ){
             largeName = friend ;
         }
-    } */
+    }
     return largeName ; 
 }
 let friendsName = ['Emtiaz','Nobita','Doraemon','Sunio','Zian'] ;
