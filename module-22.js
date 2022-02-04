@@ -16,14 +16,25 @@ console.log(triangleArea)
 
 //২.কোন একটা সংখ্যা প্রাইম সংখ্যা (prime number) কিনা। সেটা চেক করার একটা ফাংশন লিখো।  
 
-/* function primeNumber (number){
-    if(number % 1 === number && number % number === 1){
-        return ('Prime Number')
+function primeNumber (number){
+    let primeNum = 0
+    for(let i = 2; i < number/2 ; i++){
+        if(number % i == 0){
+            primeNum = 1
+            // console.log('not a prime number');
+            break ;
+        }
+    }
+    if(primeNum == 0){
+        return 'Prime number' 
+    }
+    else {
+        return 'Not a prime number' ;
     }
 }
-console.log(primeNumber(7)) ; */ 
+console.log(primeNumber(12)) ; 
 
-function isPrime(num) {
+/* function isPrime(num) {
     let sqrtnum=Math.floor(Math.sqrt(num));
     let prime = num != 1;
     for(let i=2; i<sqrtnum+1; i++) { // sqrtnum+1
@@ -35,6 +46,6 @@ function isPrime(num) {
     return prime;
 }
 // console.log(isPrime(6));
-console.log(isPrime(7));
+console.log(isPrime(7)); */
 
 
