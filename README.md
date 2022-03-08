@@ -1,6 +1,6 @@
 # js-problems
 1. Find all prime numbers
-2. Find all prime numbers in an array
+2. Find all prime numbers in an array 
 3. 
 4. 
 5. 
