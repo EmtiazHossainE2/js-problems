@@ -20,3 +20,51 @@ function isPrime(num) {
     return num > 1
 }
 console.log(array.filter(isPrime));
+
+//3 find second largest number from an array 
+
+let fans = ['Emtiaz', 'Emtiaz Emon', 'DoraEmon', 'Nobita', "Eshat hasan", 'Sj Rion Talukder']
+
+let bigFan = '';
+let secondFan = '';
+for (let i = 0; i < fans.length; i++) {
+    if (fans[i].length > bigFan.length) {
+        secondFan = bigFan;
+        bigFan = fans[i]; //Sj Rion Talukder = 16
+    } else if (fans[i].length > secondFan.length && fans[i].length != bigFan.length) {
+        secondFan = fans[i]; //Emtiaz Emon  = 11 
+    }
+}
+// console.log('My big fan is =', bigFan);
+console.log('Second largest fan is =', secondFan);
+
+
+// secondBig age 
+
+const ages = [2, 5, 7, 9, 15, 20];
+
+function findsecondBig(ages) {
+    let bigAge = ages[0]
+    let secondBigAge = ages[0]
+    /* for (let i = 0; i < ages.length; i++) {
+        const age = ages[i]
+        if (age > bigAge) {
+            secondBigAge = bigAge
+            bigAge = age
+        }
+        else if (age > secondBigAge && age !== bigAge) {
+            secondBigAge = age
+        }
+    } */
+    for (const age of ages) {
+        if (age > bigAge) {
+            secondBigAge = bigAge
+            bigAge = age
+        }
+        else if (age > secondBigAge && age !== bigAge) {
+            secondBigAge = age
+        }
+    }
+    return secondBigAge;
+}
+console.log(findsecondBig(ages)); 
