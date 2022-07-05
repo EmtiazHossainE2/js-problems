@@ -92,6 +92,7 @@ let count = sentence.filter(letter => vowels.includes(letter)).length
 
 // console.log(count);
 
+
 //for loop 
 let vowel = ['a', 'e', 'i', 'o', 'u']
 
@@ -105,5 +106,5 @@ function countVowel(input) {
     return count1
 }
 
-let myInput = 'The quick  brown fox jumps over the lazy dog .'
+let myInput = 'The quick brown fox jumps over the lazy dog .'
 console.log(countVowel(myInput));
