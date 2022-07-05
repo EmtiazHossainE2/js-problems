@@ -8,8 +8,7 @@ function smallNumber(numbers) {
     //     }
     // }
     for (let i = 0; i < numbers.length; i++) {
-        let number = numbers[i]
-        if (number < small) {
+        if (numbers[i] < small) {
             small = number
         }
     }
@@ -29,7 +28,7 @@ if (num1 < num2 && num1 < num3) {
     console.log('Number 1 is small : ', num1);
     return
 }
-if (num2 < num1 && num2 < num3) {
+else if (num2 < num1 && num2 < num3) {
     console.log('Number 2 is small : ', num2);
     return
 }
