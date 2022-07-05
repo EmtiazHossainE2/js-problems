@@ -6,7 +6,7 @@ for (let n = 2; n <= 100; n++) {
         primes.push(n);
     }
 }
-console.log(primes);
+// console.log(primes);
 
 //2.Find all prime numbers in an array 
 
@@ -19,7 +19,7 @@ function isPrime(num) {
     }
     return num > 1
 }
-console.log(array.filter(isPrime));
+// console.log(array.filter(isPrime));
 
 //3 find second largest number from an array 
 
@@ -36,7 +36,7 @@ for (let i = 0; i < fans.length; i++) {
     }
 }
 // console.log('My big fan is =', bigFan);
-console.log('Second largest fan is =', secondFan);
+// console.log('Second largest fan is =', secondFan);
 
 
 // secondBig age 
@@ -67,4 +67,27 @@ function findsecondBig(ages) {
     }
     return secondBigAge;
 }
-console.log(findsecondBig(ages)); 
+// console.log(findsecondBig(ages));
+
+//4.Write a function that returns sum of all numbers. (using only forEach(),spread operator and Arithmetic operators.)
+
+let numbers = [1,2,3,4,5,6,7,8,9,10] 
+
+let sum = 0 
+numbers.forEach(number => {
+    sum+= number 
+    return
+});
+
+// console.log(sum);
+
+
+// 5. " We are best" --- count the vowels in this sentence ( using Array.from() and includes)
+
+let sentence = Array.from("We re best") 
+// console.log(sentence);
+let vowels = ['a','e','i','o','u','A','E','I','O','U']
+
+let count = sentence.filter(letter => vowels.includes(letter)).length
+
+console.log(count);
