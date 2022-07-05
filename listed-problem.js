@@ -71,11 +71,11 @@ function findsecondBig(ages) {
 
 //4.Write a function that returns sum of all numbers. (using only forEach(),spread operator and Arithmetic operators.)
 
-let numbers = [1,2,3,4,5,6,7,8,9,10] 
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-let sum = 0 
+let sum = 0
 numbers.forEach(number => {
-    sum+= number 
+    sum += number
     return
 });
 
@@ -84,10 +84,26 @@ numbers.forEach(number => {
 
 // 5. " We are best" --- count the vowels in this sentence ( using Array.from() and includes)
 
-let sentence = Array.from("We re best") 
+let sentence = Array.from("We re best")
 // console.log(sentence);
-let vowels = ['a','e','i','o','u','A','E','I','O','U']
+let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 
 let count = sentence.filter(letter => vowels.includes(letter)).length
 
-console.log(count);
+// console.log(count);
+
+//for loop 
+let vowel = ['a', 'e', 'i', 'o', 'u']
+
+function countVowel(input) {
+    let count1 = 0
+    for (let letter of input.toLowerCase()) {
+        if (vowel.includes(letter)) {
+            count1++
+        }
+    }
+    return count1
+}
+
+let myInput = 'The quick  brown fox jumps over the lazy dog .'
+console.log(countVowel(myInput));

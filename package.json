@@ -1,0 +1,22 @@
+{
+  "name": "js-problems",
+  "version": "1.0.0",
+  "description": "1. 1 to 100 addition 2.  1 to 10 multiplication",
+  "main": "abc.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmtiazHossainE2/js-problems.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmtiazHossainE2/js-problems/issues"
+  },
+  "homepage": "https://github.com/EmtiazHossainE2/js-problems#readme"
+}
