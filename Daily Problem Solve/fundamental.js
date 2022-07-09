@@ -14,6 +14,12 @@ console.log(getStr('123456'));
 
 //3.Extract first half of string
 function halfStr(str) {
-    return
+    return str.slice(0, str.length / 2)
 }
-console.log(halfStr('Emtiaz'));
+console.log(halfStr('1234567898'));
+
+//4Remove last n characters of string
+function lastStr(a) {
+    return a.slice(0, -3)
+}
+console.log(lastStr('fgedcba'));
