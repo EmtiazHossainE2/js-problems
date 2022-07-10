@@ -23,3 +23,4 @@ function lastStr(a) {
     return a.slice(0, -3)
 }
 console.log(lastStr('fgedcba'));
+
