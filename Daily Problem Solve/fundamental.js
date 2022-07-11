@@ -32,12 +32,13 @@ function percentageA(a, b) {
 console.log(percentageA(500, 25));
 
 //6 Basic JavaScript math operators
+// Sum a and b
+// Then substract by c
+// Then multiply by d and divide by e
+// Finally raise to the power of f and return the result
 function myOperator(a, b, c, d, e, f) {
-    let sum = a + b
-    let sub = sum - c
-    let multi = sub * d
-    let divi = multi / e
-    let power = divi * f
-    return power
+    return (((a + b - c) * d) / e) ** f
 }
 console.log(myOperator(6, 5, 4, 3, 2, 1));
+
+//7 Check if a number is even
