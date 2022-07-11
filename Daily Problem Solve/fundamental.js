@@ -24,3 +24,8 @@ function lastStr(a) {
 }
 console.log(lastStr('fgedcba'));
 
+//5 Return the percentage of a number
+function percentageA(a, b) {
+    return (b / a) * 100
+}
+console.log(percentageA(500, 25));
