@@ -42,3 +42,23 @@ function myOperator(a, b, c, d, e, f) {
 console.log(myOperator(6, 5, 4, 3, 2, 1));
 
 //7 Check if a number is even
+function evenNum(a) {
+    // if (a % 2 == 0) {
+    //     return true
+    // }
+    // else {
+    //     return false
+    // }
+    return a % 2 === 0
+
+}
+console.log(evenNum(5));
+
+//8 How many times does a character occur? 
+//Return the number of times a occurs in b
+function charOccur(a, b) {
+    return b.split(a).length - 1
+    // return b.split("").reduce((prev, cur) => cur === a ? prev + 1 : prev, 0)
+}
+
+console.log(charOccur('e', 'emtiaz'));
