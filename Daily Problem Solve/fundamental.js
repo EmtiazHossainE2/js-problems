@@ -24,8 +24,20 @@ function lastStr(a) {
 }
 console.log(lastStr('fgedcba'));
 
-//5 Return the percentage of a number (b percent of a)
+//5 Return the percentage (b percent of a)
 function percentageA(a, b) {
-    return (b / 100) * a
+    // return (b / 100) * a
+    return a * b / 100
 }
 console.log(percentageA(500, 25));
+
+//6 Basic JavaScript math operators
+function myOperator(a, b, c, d, e, f) {
+    let sum = a + b
+    let sub = sum - c
+    let multi = sub * d
+    let divi = multi / e
+    let power = divi * f
+    return power
+}
+console.log(myOperator(6, 5, 4, 3, 2, 1));
