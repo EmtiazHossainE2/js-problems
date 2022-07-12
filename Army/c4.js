@@ -1,17 +1,17 @@
 const names = [
-    'HM Nayeem',
-    'Aditya Chakraborty',
-    'Abu Rayhan',
-    'Shaker Hossain',
-    'Akib Ahmad',
-    'Alvi Chowdhury',
+    'Emtiaz',
+    'Emon',
+    'Alif',
+    'Raju',
+    'Jamal',
+    'Salam',
 ];
 let index = -1;
 let person = names[++index];
 
 setInterval(() => {
     person = names[index++];
-    console.log(person, person.length);
+    // console.log(person, person.length);
 
     if (index === names.length) {
         index = 0;
@@ -19,27 +19,27 @@ setInterval(() => {
 }, 1000);
 
 const student1 = {
-    firstName: 'Abu',
-    secondName: 'Rayhan',
-    email: 'rayhan@example.com',
-    age: 25,
+    firstName: 'Emtiaz',
+    secondName: 'Emon',
+    email: 'emtiaz@gmail.com',
+    age: 21,
     attend: true,
 };
 
 const student2 = {
-    firstName: 'Alvi',
-    secondName: 'Chowdhury',
-    email: 'alvi@example.com',
-    age: 25,
+    firstName: 'Dora',
+    secondName: 'Emon',
+    email: 'doraemon@gmail.com',
+    age: 23,
     attend: true,
 };
 
 const student3 = {
-    firstName: 'Akib',
-    secondName: 'Ahmad',
-    email: 'akib@example.com',
-    age: 25,
-    attend: true,
+    firstName: 'Nobita',
+    secondName: 'Nobi',
+    email: 'nobita@gmail.com',
+    age: 20,
+    attend: false,
 };
 
 const allStudents = [student1, student2, student3];
@@ -51,3 +51,13 @@ for (let i = 0; i < allStudents.length; i++) {
 function sendEmail(email) {
     console.log('Sending email to', email);
 }
+
+//random number
+function generateRandomNumber(max) {
+    const randomNumber = Math.floor(Math.random() * max);
+    return randomNumber;
+}
+
+console.log(generateRandomNumber(10));
+console.log(generateRandomNumber(100));
+console.log(generateRandomNumber(1000));
