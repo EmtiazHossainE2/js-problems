@@ -107,4 +107,24 @@ function countVowel(input) {
 }
 
 let myInput = 'The quick brown fox jumps over the lazy dog .'
-console.log(countVowel(myInput));
+// console.log(countVowel(myInput));
+
+//6 Have the function MathChallenge(num) take the num parameter being passed and return the string true if the parameter is a prime number, otherwise return the string false. The range will be between 1 and 2^16.
+function MathChallenge(num) {
+    let i = 2
+    if(num < 65536){
+      if (i < num) {
+        if (num % i === 0) {
+          return 'false'
+        }
+        else {
+          return 'true'
+        }
+      }
+    }
+    else{
+      return 'The range will be 2^16.'
+    }
+  }
+  
+  console.log(MathChallenge(65532));
